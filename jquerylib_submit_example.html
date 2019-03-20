@@ -17,7 +17,12 @@ $(document).ready(function(){
     $("form").submit(function(event){
         var regex = /^[a-zA-Z]+$/;
         var currentValue = $("#oneWord").val();
-        if(regex.test(currentValue) == false){
+        var helloValue = "hello";
+        if(currentValue == helloValue){
+          $("#result").html('<p class="good">Hello to you too!</p>').show().fadeOut(10000);
+          event.preventDefault();
+        }
+        else if(regex.test(currentValue) == false){
             $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(10000);
             // Preventing form submission
             event.preventDefault();
@@ -37,4 +42,4 @@ $(document).ready(function(){
         <div id="result"></div>
     </form>
 </body>
-</html>                           
+</html>
