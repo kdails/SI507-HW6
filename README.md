@@ -82,13 +82,14 @@ To use a comment, the coder must put // before their comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
-- The javascript code must be placed into the script tag which is where you'll place the javascript code.
-- The onload = function or oncopy = fuction, these are called events which call the functions in the javascript code.
+The javascript code must be placed into the script tag which is where you'll place the javascript code.
+The onload = function or oncopy = fuction, these are called events which call the functions in the javascript code.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-- alert("hello");
-- console.log("hello in console");
+alert("hello");
+console.log("hello in console");
+
 The alert is a pop out in the browser. The console is what is printed behind the scenes in the console.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
@@ -111,6 +112,7 @@ The word document is referencing the document we're working in currently, like s
 You're assigning the items ID to the number of elements that are tags "li" which means list and then it's counting their number by using .length.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
 White
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
