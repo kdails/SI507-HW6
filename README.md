@@ -1,4 +1,3 @@
-t assignment
 
 ## Some useful resources
 * Some [JavaScript tutorials](https://www.htmldog.com/guides/javascript/)
