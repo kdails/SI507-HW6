@@ -139,13 +139,22 @@ The above code triggers a pop up because the function is defined in the JS code 
 According to class information within the style tags, the error input is red because of classes that are defined as: .error in red and .good in blue.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
-I googled " What is regex jquery" and I was able to find a page from w3schools.com that was insightful as well as rexegg.com. Apparently Regular Expression, regex for short is a sequence of characters that forms a search pattern. To search for data in text, you can use the search pattern to describe what you're looking for which is what the var regex statement is doing!
+I googled " What is regex jquery" and I was able to find a page from w3schools.com that was insightful as well as rexegg.com. Apparently Regular Expression, regex for short is a sequence of characters that forms a search pattern. To search for data in text, you can use the search pattern to describe what you're looking for which is what the var regex statement is doing, searching for anything that isn't a-z or A-Z! A space or @ or * would all break and have the error class called(turning text red).
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
-
+Although conditionals in both of these languages allow you to complete similar tasks, in python there's the use of colon separating the if from the statement itself like :
+if condition :
+...     // defining something to happen if true
+in this expression.... spaces matter
+Whereas in Javascript, the conditional would look like:
+if (condition) {
+  //  block of code to be executed if the condition is true
+}
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
-
+in looking up what .fadeOut on the jquery documentation actually means and needs, I discovered that 10000 is determining how long the animation will run in milliseconds.
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
+
+In my mind, the below code means that it will only run if and when the submit button is pressed, because they are stacked conditionals. It seems to me like when the program runs and a person acts and clicks on the button labelled as submit, the function below it is run and if it's good, then the user can submit and if it is not good, then the form raises the error message and the user is alerted with the error text.
 
 ```js
 $(document).ready(function(){
