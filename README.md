@@ -1,3 +1,4 @@
+# JavaScript assignment
 
 ## Some useful resources
 * Some [JavaScript tutorials](https://www.htmldog.com/guides/javascript/)
@@ -100,7 +101,7 @@ The word document is referencing the document we're working in currently, like s
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
-You're assigning the items ID to the number of elements that are tagges "li" which means list and then it's counting their number by using .length.
+You're assigning the items ID to the number of elements that are tags "li" which means list and then it's counting their number by using .length.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 White
@@ -109,6 +110,7 @@ White
 They're defined within the paragraph tag as a gray color. you can change it by altering the hexadecimal color to a different one.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+In looking at the other school names around McGill, I noticed that there's a function attached to Michigan. In order to highlight text and have more show up in a different area of the site, we'd need to do a similar thing and create a separate function with an ID for that specific tag.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -122,7 +124,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-
+The above code triggers a pop up because the function is defined in the JS code to present the user with a popup. The trigger is the event "onclick", which is built in to call the JS code and do what is defined when that specific button is clicked by user.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
@@ -134,8 +136,10 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+According to class information within the style tags, the error input is red because of classes that are defined as: .error in red and .good in blue.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+I googled " What is regex jquery" and I was able to find a page from w3schools.com that was insightful as well as rexegg.com. Apparently Regular Expression, regex for short is a sequence of characters that forms a search pattern. To search for data in text, you can use the search pattern to describe what you're looking for which is what the var regex statement is doing!
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
