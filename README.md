@@ -77,39 +77,48 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
+
 To use a comment, the coder must put // before their comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
 - The javascript code must be placed into the script tag which is where you'll place the javascript code.
 - The onload = function or oncopy = fuction, these are called events which call the functions in the javascript code.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
 - alert("hello");
 - console.log("hello in console");
 The alert is a pop out in the browser. The console is what is printed behind the scenes in the console.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+
 You would need to comment out the alert().
 I added the code : alert(Date()); so now the alert shows the date.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+
 You would have to change the innerHTML which is altering the content. In order to change it, you should assign to a string like = "kara was here"
 
 * **What does the word `document` represent in this code? Explain briefly.**
+
 The word document is referencing the document we're working in currently, like self does in python.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+
 You're assigning the items ID to the number of elements that are tags "li" which means list and then it's counting their number by using .length.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 White
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+
 They're defined within the paragraph tag as a gray color. you can change it by altering the hexadecimal color to a different one.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
 In looking at the other school names around McGill, I noticed that there's a function attached to Michigan. In order to highlight text and have more show up in a different area of the site, we'd need to do a similar thing and create a separate function with an ID for that specific tag.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
@@ -124,6 +133,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
+
 The above code triggers a pop up because the function is defined in the JS code to present the user with a popup. The trigger is the event "onclick", which is built in to call the JS code and do what is defined when that specific button is clicked by user.
 
 
@@ -136,23 +146,35 @@ The above code triggers a pop up because the function is defined in the JS code 
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+
 According to class information within the style tags, the error input is red because of classes that are defined as: .error in red and .good in blue.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
 I googled " What is regex jquery" and I was able to find a page from w3schools.com that was insightful as well as rexegg.com. Apparently Regular Expression, regex for short is a sequence of characters that forms a search pattern. To search for data in text, you can use the search pattern to describe what you're looking for which is what the var regex statement is doing, searching for anything that isn't a-z or A-Z! A space or @ or * would all break and have the error class called(turning text red).
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+
 Although conditionals in both of these languages allow you to complete similar tasks, in python there's the use of colon separating the if from the statement itself like :
-if condition :
-...     // defining something to happen if true
+
+'''if condition :
+
+...     // defining something to happen if true'''
+
 in this expression.... spaces matter
+
 Whereas in Javascript, the conditional would look like:
-if (condition) {
+
+'''if (condition) {
   //  block of code to be executed if the condition is true
-}
+}'''
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
-in looking up what .fadeOut on the jquery documentation actually means and needs, I discovered that 10000 is determining how long the animation will run in milliseconds.
+
+In looking up what .fadeOut on the jquery documentation actually means and needs, I discovered that 10000 is determining how long the animation will run in milliseconds.
+
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
+
 In my mind, the below code means that it will only run if and when the submit button is pressed, because they are stacked conditionals. It seems to me like when the program runs and a person acts and clicks on the button labelled as submit, the function below it is run and if it's good, then the user can submit and if it is not good, then the form raises the error message and the user is alerted with the error text.
 
 ```js
